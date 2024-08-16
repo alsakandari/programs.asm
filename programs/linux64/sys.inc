@@ -1,7 +1,7 @@
 SYS_write equ 1
 SYS_exit equ 60
 
-STDOUT equ 0
+STDOUT equ 1
 
 macro syscall1 code, arg1 {
     mov rdi, arg1
