@@ -4,7 +4,7 @@ include "sys.inc"
 
 segment executable readable
 entry $
-    syscall3 SYS_write, STDOUT, hello, hello.len
+    syscall3 SYS_write, STDOUT, hello, [hello.len]
     syscall1 SYS_exit, 0
 
 segment  writeable readable
